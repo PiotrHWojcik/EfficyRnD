@@ -14,15 +14,15 @@ Specification of software are described in file .
   
 ## Installation
 
-1. Clone the repository: 
+1. **Clone the repository**:
+
+  git clone https://github.com/PiotrHWojcik/EfficyRnD.git
   
-  ```bash git clone https://github.com/PiotrHWojcik/EfficyRnD.git
-  
-2. Navigate to the project directory:
+2. **Navigate to the project directory**:
 
   cd EfficyRnD
 
-3. Install dependencies:
+3. **Install dependencies**:
 
   npm install
 
