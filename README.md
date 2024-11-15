@@ -3,7 +3,7 @@
 
 EfficyRnD it is a REST API backend software creted as required by Piotr Wójcik for Efficy.
 
-Specification of software are described in file .
+Specification of software are described in file efficy-rnd-backend-csharp-coding-assignment.pdf .
 
 
 ## Table of Contents 
