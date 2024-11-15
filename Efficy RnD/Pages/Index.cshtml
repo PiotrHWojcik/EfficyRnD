@@ -1,0 +1,40 @@
+﻿@page 
+@model EfficyRnD.Pages.IndexModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teams and Counters</title>
+</head>
+<body>
+    <h1>Teams and Counters</h1>
+    @if (Model.Teams != null && Model.Teams.Any())
+    {
+       <ul> @foreach (var team in Model.Teams)
+            {
+                <li> <strong>@team.Name</strong>
+                    @if (Model.Counters != null && Model.Counters.Any())
+                        {
+                            <ul> @foreach (var counter in Model.Counters)
+                                {
+                                    @if(counter.TeamId == team.Id)
+                                    {
+                                        <li>@counter.Name: @counter.Value</li>
+                                    }
+                                } 
+                            </ul>
+                        }
+                        else
+                        {
+                            <p>No counters.</p>
+                        }                   
+                </li>
+            } 
+        </ul>
+    }
+    else
+    {
+        <p>No teams.</p>
+    }
+</body>
+</html>
